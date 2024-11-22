@@ -1,0 +1,379 @@
+.development-title_projects {
+    .development-title__left {
+        width: 67%;
+    }
+
+    .red-logo {
+        margin-top: 16px;
+    }
+}
+
+.our-projects__pattern {
+    height: 449px;
+    border-radius: 20px;
+    background: #f3f3f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-projects_projects {
+    margin-bottom: 99px;
+    .our-projects__grid {
+        margin-bottom: 10px;
+    }
+}
+
+.our-projects__grid_more {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+
+    h3.multiround-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .our-projects__item:hover {
+        .multiround-title {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding-top: 34px;
+
+    h1.multiround-title {
+        margin-bottom: 36px;
+    }
+}
+
+.project-title__logo {
+    width: 137px;
+    margin-top: 10px;
+    img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        max-height: 300px;
+    }
+}
+
+.project-title__right {
+    width: 49.7%;
+}
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 704px 312px 232px 232px;
+
+    gap: 12px 10px;
+
+    margin-bottom: 87px;
+}
+
+.project-gallery__item {
+    border-radius: 20px;
+    overflow: hidden;
+
+    background-color: lightgray;
+    opacity: 0.95;
+
+    transition: all 0.2s ease-in-out;
+    position: relative;
+
+    cursor: pointer;
+    img {
+        object-fit: cover;
+        object-position: center;
+        max-width: 100%;
+        height: 100%;
+        width: 100%;
+        min-height: 100%;
+    }
+}
+
+.project-gallery__play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    circle {
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+.project-gallery__item:hover {
+    opacity: 1;
+
+    .project-gallery__play-btn {
+        circle {
+            fill-opacity: 1;
+        }
+    }
+}
+
+.project-gallery__item_video {
+    grid-column: span 12;
+}
+
+.project-gallery__item_m {
+    grid-column: span 4;
+}
+
+.project-gallery__item_l {
+    grid-column: span 6;
+    grid-row: span 2;
+}
+
+.project-gallery__item_s {
+    grid-column: span 3;
+}
+
+.project-detail__title {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 15px;
+
+    margin-bottom: 42px;
+    .red-logo {
+        width: 90px;
+        height: 35px;
+
+        background-size: cover;
+    }
+
+    h2.multiround-title:nth-child(1) {
+        width: 100%;
+    }
+
+    h2.multiround-title:nth-child(3) {
+        margin-left: auto;
+    }
+}
+
+.project-detail__description {
+    color: #111;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 18.2px */
+
+    margin-bottom: 37px;
+
+    br {
+        display: block; /* makes it have a width */
+        content: ""; /* clears default height */
+        margin-bottom: 10px;
+    }
+}
+
+.project-detail__details {
+    width: 49.7%;
+    margin-left: auto;
+}
+
+.project-detail__schedule-title {
+    font-size: 18px;
+}
+
+.project-detail__schedule {
+    h3.multiround-title {
+        margin-bottom: 19px;
+    }
+
+    .realized-projects__contacts {
+        margin-bottom: 22px;
+    }
+}
+
+.project-detail__schedule-title {
+    margin-bottom: 10px;
+}
+
+.project-details {
+    margin-bottom: 99px;
+}
+
+.send-request_projects {
+    margin-bottom: 100px;
+}
+
+.our-projects_projects-detail {
+    h2.multiround-title {
+        margin-bottom: 54px;
+    }
+}
+
+@media (max-width: 712px) {
+    .our-projects__pattern {
+        display: none;
+    }
+
+    .our-projects_projects {
+        margin-bottom: 65px;
+
+        .our-projects__grid {
+            margin-bottom: 17px;
+        }
+    }
+
+    .our-projects__grid_more {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px 10px;
+        margin-bottom: 13px;
+
+        h3.multiround-title {
+            font-size: 16px;
+            margin-bottom: 2px;
+        }
+    }
+
+    .our-projects_projects-more {
+        .our-projects__grid {
+            margin-bottom: 10px;
+        }
+    }
+
+    .project-title {
+        flex-direction: column;
+        padding-top: 33px;
+
+        h1.multiround-title {
+            margin-bottom: 21px;
+        }
+    }
+
+    .project-title__right {
+        width: 100%;
+    }
+
+    .project-title__logo {
+        height: 56px;
+        width: auto;
+        margin-bottom: 26px;
+        margin-top: 0;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .project-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 178px 117.655px 117.655px 117.655px 117.655px;
+        gap: 7px 10px;
+
+        margin-bottom: 61px;
+    }
+
+    .project-gallery__item {
+        border-radius: 4px;
+    }
+
+    .project-gallery__item_video {
+        grid-column: span 2;
+    }
+
+    .project-gallery__item_l,
+    .project-gallery__item_m,
+    .project-gallery__item_s {
+        grid-column: span 1;
+    }
+
+    .project-gallery__item_l {
+        grid-row: span 1;
+    }
+
+    .project-gallery__play-btn {
+        svg {
+            width: 72px;
+            height: 72px;
+        }
+    }
+
+    .project-title {
+        margin-bottom: 38px;
+    }
+
+    .project-detail__title {
+        margin-bottom: 69px;
+        gap: 8px;
+
+        h2.multiround-title {
+            font-size: 36px;
+
+            line-height: 100%;
+        }
+
+        .red-logo {
+            width: 66.657px;
+            height: 26.006px;
+
+            order: 3;
+        }
+
+        h2.multiround-title:nth-child(1) {
+            width: auto;
+        }
+    }
+
+    .project-detail__details {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .project-detail__description {
+        margin-bottom: 50px;
+    }
+
+    .project-detail__schedule {
+        margin-bottom: 5px;
+        h3.multiround-title {
+            font-size: 18px;
+            margin-bottom: 21px;
+        }
+
+        .realized-projects__contacts {
+            > li {
+                flex-direction: row;
+
+                margin-bottom: 3px;
+            }
+        }
+    }
+
+    .project-details {
+        margin-bottom: 46px;
+    }
+
+    .send-request {
+        .title-section__description {
+            width: 98%;
+        }
+    }
+
+    .send-request_projects {
+        margin-bottom: 66px;
+    }
+
+    .our-projects_projects-detail {
+        h2.multiround-title {
+            margin-bottom: 35px;
+        }
+
+        .our-projects__grid {
+            gap: 4px;
+        }
+    }
+}

@@ -1,0 +1,627 @@
+.development-title {
+    display: flex;
+    padding-top: 34px;
+    margin-bottom: 50px;
+
+    .red-logo {
+        margin-top: 10px;
+    }
+
+    .main-button {
+        width: 100%;
+    }
+}
+
+.development-title__left {
+    width: 87%;
+}
+
+.development-title__right {
+    .multiround-title {
+        margin-bottom: 35px;
+    }
+}
+
+.development-title__description {
+    color: #111;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+
+    margin-bottom: 14px;
+
+    br {
+        display: block; /* makes it have a width */
+        content: ""; /* clears default height */
+        margin-bottom: 10px;
+    }
+}
+
+.development__cover {
+    width: 100%;
+    height: 600px;
+    margin-bottom: 97px;
+    border-radius: 20px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        min-height: 100%;
+        min-width: 100%;
+    }
+}
+
+.development__footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 49.7%;
+    margin-left: auto;
+
+    .development-title__description {
+        width: 100%;
+        margin-bottom: 45px;
+    }
+
+    .black-background {
+        margin-left: auto;
+    }
+}
+
+.development {
+    margin-bottom: 123px;
+}
+
+.our-projects_development {
+    margin-bottom: 102px;
+    h2.multiround-title {
+        margin-bottom: 54px;
+    }
+}
+
+.planning-projects {
+    margin-bottom: 89px;
+    .multiround-title {
+        margin-bottom: 53px;
+    }
+}
+
+.planning-projects__top {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border-bottom: 1px solid #111;
+    padding-bottom: 14px;
+    gap: 20.2px;
+    margin-bottom: 30px;
+}
+
+.planning-projects__pagination {
+    display: flex;
+    align-items: center;
+    width: 65px;
+
+    gap: 20.2px;
+
+    font-size: 16px;
+
+    .swiper-pagination-current,
+    .swiper-pagination-total {
+        color: #111;
+
+        font-size: 16px !important;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        text-transform: uppercase;
+        width: 5px;
+    }
+
+    .swiper-pagination-current {
+        color: #9e2629;
+    }
+}
+
+.planning-projects__span_active {
+    color: #9e2629;
+}
+
+.planning-projects_cover {
+    width: 100%;
+    height: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+    img {
+        object-fit: cover;
+        object-position: center;
+        min-height: 100%;
+        max-width: 100%;
+        height: 100%;
+    }
+}
+
+.planning-projects_cover::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0) 38%, rgba(17, 17, 17, 0.8) 100%);
+    z-index: 1;
+    pointer-events: none;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.planning-projects__slide {
+    position: relative;
+    width: 943px;
+    .multiround-title {
+        position: absolute;
+        bottom: 27px;
+        left: 29px;
+        color: #fff;
+        margin-bottom: 0;
+        z-index: 2;
+    }
+}
+
+.realized-projects {
+    margin-bottom: 101px;
+    h2.multiround-title {
+        margin-bottom: 47px;
+    }
+}
+
+.realized-projects__top {
+    display: flex;
+    align-items: center;
+}
+
+.realized-projects__cover {
+    max-width: 100%;
+    height: 449px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        object-position: center;
+        height: 100%;
+    }
+}
+
+.realized-projects__span {
+    color: rgba(158, 38, 41, 0.8);
+    font-family: "Multiround Pro";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 48px */
+    text-transform: uppercase;
+    width: 50.3%;
+}
+
+.realized-projects__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    path,
+    svg {
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+.realized-projects__item {
+    margin-bottom: 14px;
+    border-bottom: 1px solid #111;
+    padding-bottom: 11px;
+
+    h4.multiround-title {
+        padding-top: 10px;
+    }
+
+    .realized-projects__icon {
+        padding: 10px 0 0 0;
+    }
+}
+
+.realized-projects__item:not(.realized-projects__item_open) {
+    .realized-projects__footer {
+        transform: translateY(-50px);
+        height: 0;
+        opacity: 0;
+        user-select: none;
+        pointer-events: none;
+    }
+}
+
+.realized-projects__item_open {
+    padding-bottom: 20px;
+    .realized-projects__icon {
+        svg {
+            transform: rotate(180deg);
+            transform-origin: center;
+        }
+
+        path {
+            stroke: #9e2629;
+        }
+    }
+
+    .realized-projects__top {
+        margin-bottom: 16px;
+    }
+}
+
+.realized-projects__footer {
+    margin-left: 50.3%;
+    height: auto;
+    transition: all 0.2s ease-in-out;
+
+    h5.multiround-title {
+        margin-bottom: 14px;
+    }
+}
+
+.realized-projects__description {
+    color: #111;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 18.2px */
+
+    max-width: 80%;
+    margin-bottom: 23px;
+}
+
+.realized-projects__schedule {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+
+    span {
+        color: #111;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%; /* 18.2px */
+        opacity: 0.5;
+    }
+
+    p {
+        color: #111;
+        text-align: right;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%; /* 18.2px */
+    }
+}
+
+.realized-projects__contacts {
+    margin-bottom: 47px;
+    > li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        padding-bottom: 5px;
+        margin-bottom: 16px;
+    }
+
+    span {
+        color: #111;
+
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%; /* 18.2px */
+
+        opacity: 0.5;
+    }
+
+    p,
+    a {
+        color: #111;
+        text-align: right;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%; /* 18.2px */
+    }
+
+    a {
+        color: #9e2629;
+    }
+}
+
+.contact-us {
+    h2.multiround-title {
+        margin-bottom: 14px;
+    }
+}
+
+.contact-us__cover {
+    width: 347px;
+    height: 250px;
+    border-radius: 6px;
+    overflow: hidden;
+    align-self: flex-end;
+
+    img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.contact-us__content {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #111;
+    padding-top: 30px;
+}
+
+.contact-us__form {
+    border-radius: 20px;
+    background: #f3f3f3;
+
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    padding: 20px;
+    width: 705px;
+
+    .form-input {
+        width: calc(50% - 5px);
+        margin-bottom: 10px;
+    }
+
+    .form-text {
+        width: 100%;
+        height: 120px;
+        margin-bottom: 6px;
+    }
+
+    .checkbox {
+        margin-bottom: 12px;
+    }
+
+    .main-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 712px) {
+    .development-title {
+        flex-direction: column;
+        padding-top: 23px;
+        margin-bottom: 34px;
+    }
+
+    .development__footer {
+        width: 100%;
+        margin-left: 0;
+
+        .info-block_red {
+            margin-bottom: 6px;
+        }
+    }
+
+    .development-title__right {
+        padding-top: 25px;
+
+        .multiround-title {
+            margin-bottom: 23px;
+        }
+    }
+
+    .development-title__description {
+        margin-bottom: 27px;
+    }
+
+    .development__cover {
+        height: 409px;
+        border-radius: 20px;
+
+        margin-bottom: 26px;
+        img {
+            object-fit: cover;
+        }
+    }
+
+    .development {
+        margin-bottom: 55px;
+    }
+
+    .our-projects_development {
+        margin-bottom: 62px;
+        h2.multiround-title {
+            margin-bottom: 37px;
+        }
+    }
+
+    .planning-projects {
+        .multiround-title {
+            margin-bottom: 11px;
+        }
+    }
+
+    .planning-projects__top {
+        padding-bottom: 10px;
+        margin-bottom: 18px;
+    }
+
+    .planning-projects__button {
+        display: none;
+    }
+
+    .planning-projects_cover {
+        height: 209px;
+    }
+
+    .planning-projects__slide {
+        width: 329px;
+    }
+
+    .planning-projects__slide {
+        .multiround-title {
+            bottom: 3px;
+            left: 17px;
+        }
+    }
+
+    .planning-projects {
+        margin-bottom: 63px;
+    }
+
+    .realized-projects {
+        h2.multiround-title {
+            margin-bottom: 37px;
+        }
+    }
+
+    .realized-projects__top {
+        flex-wrap: wrap;
+    }
+
+    .realized-projects__span {
+        font-size: 32px;
+    }
+
+    .realized-projects__item {
+        h4.multiround-title {
+            order: 3;
+            padding-top: 22px;
+        }
+
+        .realized-projects__icon {
+            padding: 1px 0 0 0;
+        }
+    }
+
+    .realized-projects__footer {
+        margin-left: 0;
+    }
+
+    .realized-projects__description {
+        max-width: 100%;
+    }
+
+    .realized-projects__item_open {
+        .realized-projects__top {
+            margin-bottom: 24px;
+        }
+    }
+
+    .realized-projects__contacts {
+        > li {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 9px;
+            padding-bottom: 8px;
+        }
+    }
+
+    .realized-projects__contacts {
+        margin-bottom: 28px;
+    }
+
+    .realized-projects__footer {
+        h5.multiround-title {
+            margin-bottom: 10px;
+        }
+    }
+
+    .realized-projects__schedule {
+        padding-bottom: 1px;
+    }
+
+    .realized-projects__cover {
+        height: 202px;
+    }
+
+    .realized-projects__item_open {
+        padding-bottom: 16px;
+    }
+
+    .realized-projects__item {
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+    }
+
+    .realized-projects {
+        margin-bottom: 61px;
+    }
+
+    .contact-us__cover {
+        display: none;
+    }
+
+    .contact-us__form {
+        flex-direction: column;
+        padding: 17px;
+
+        .form-input {
+            width: 100%;
+            margin-bottom: 7px;
+        }
+
+        .form-text {
+            margin-bottom: 11px;
+        }
+
+        .checkbox {
+            margin-bottom: 15px;
+        }
+    }
+
+    .footer__top {
+        padding-top: 74px;
+    }
+
+    .footer__top {
+        & .footer__logo {
+            svg {
+                width: 122vw;
+                min-width: 122vw;
+                height: 179.62px;
+                transform: translateX(-10%);
+            }
+        }
+
+        .main__container {
+            height: 127px;
+        }
+    }
+
+    .rights-text {
+        order: 2;
+    }
+
+    .linza-logo {
+        order: 3;
+        margin-top: 16px;
+    }
+
+    .politic-link {
+        margin-left: 0;
+        width: 100%;
+    }
+}

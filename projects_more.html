@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="./libs/Swiper/swiper-bundle.min.css" />
+        <script src="./libs/Swiper/swiper-bundle.min.js"></script>
+        <script src="https://api-maps.yandex.ru/v3/?lang=ru_RU&apikey=7fd48120-c769-48f3-9c11-486491ed5a6b"></script>
+        <script src="./libs/anime-master/lib/anime.min.js"></script>
+
+        <link rel="stylesheet" href="./assets/fonts/MultiroundPro.otf" />
+
+        <link rel="stylesheet" href="./styles/index.css" />
+        <link rel="stylesheet" href="./styles/styles.css" />
+        <link rel="stylesheet" href="./styles/development.css" />
+        <link rel="stylesheet" href="./styles/projects.css" />
+
+        <title>GremmGroup</title>
+    </head>
+    <body>
+        <header class="header__wrapper">
+            <div class="main__container header__container">
+                <div class="header__logo"></div>
+                <nav class="header__navigation">
+                    <a href="/projects.html" class="header__link header-link__active">Проекты</a>
+                    <a href="/rent.html" class="header__link">Аренда</a>
+                    <a href="/development.html" class="header__link">Девелопмент</a>
+                    <a href="/partners.html" class="header__link">Партнерство</a>
+                    <a href="/about-us.html" class="header__link header__link_active">О компании</a>
+                </nav>
+                <ul class="header__contacts">
+                    <li>
+                        <a href="tel:+7 495 642-80-00">+7 495 642-80-00</a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@gremm.ru">info@gremm.ru</a>
+                    </li>
+                </ul>
+                <div class="mobile-nav__button">
+                    <div class="mobile-nav__line"></div>
+                    <div class="mobile-nav__line"></div>
+                    <div class="mobile-nav__line"></div>
+                </div>
+
+                <nav class="mobile-nav">
+                    <a href="/projects.html" class="mobile-nav__link">Проекты</a>
+                    <a href="/partners.html" class="mobile-nav__link">Партнёрство</a>
+                    <a href="/rent.html" class="mobile-nav__link">Аренда</a>
+                    <a href="/about-us.html" class="mobile-nav__link">О компании</a>
+                    <a href="/development.html" class="mobile-nav__link">Девелопмент</a>
+
+                    <ul class="mobile-nav__contacts">
+                        <li>Москва, Краснопресненская набережная, д. 8</li>
+                        <li>
+                            <a href="tel:+7 495 642-80-00">+7 495 642-80-00</a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@gremm.ru">info@gremm.ru</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="development-title development-title_projects main__container">
+                <div class="development-title__left">
+                    <div class="red-logo"></div>
+                </div>
+                <div class="development-title__right">
+                    <h1 class="multiround-title">Проекты</h1>
+                    <p class="development-title__description">
+                        Мы рушим стандарты и создаём новые необыкновенно креативные и атмосферные проекты. <br />
+                        В собственности и управлении компании находятся наиболее яркие и коммерчески успешные объекты
+                        коммерческой недвижимости.
+                    </p>
+                </div>
+            </section>
+
+            <section class="main-map__wrapper">
+                <div class="main__container">
+                    <div id="main-map" style="width: 100%; height: 484px"></div>
+                </div>
+            </section>
+
+            <section class="our-projects our-projects_projects our-projects_projects-more">
+                <div class="main__container">
+                    <div class="filters__wrapper">
+                        <ul class="filters">
+                            <li class="filters__item filters__item_active">Все</li>
+                            <li class="filters__item">Рынки</li>
+                            <li class="filters__item">Банные комплексы</li>
+                            <li class="filters__item">Торговые комплексы</li>
+                        </ul>
+                    </div>
+
+                    <div class="our-projects__grid">
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/1.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <div class="our-projects__logo">
+                                    <img src="./assets/img/companies/rub-bani.svg" alt="" />
+                                </div>
+                                <h3 class="multiround-title part_text">УСАЧЕВСКИЙ РЫНОК</h3>
+                                <ul class="our-projects__contacts">
+                                    <li>Москва, поселок Рублево, ул. Советская, д.9</li>
+                                    <li>+7 499 67-00-777</li>
+                                    <li>rublevskie-bani.ru/</li>
+                                </ul>
+                            </div>
+
+                            <div class="our-projects__hover-item">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="964"
+                                    height="1144"
+                                    viewBox="0 0 964 1144"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M793.5 170.84L170.736 973.156L170.737 170.839"
+                                        stroke="#111111"
+                                        stroke-width="340"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/2.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <div class="our-projects__logo">
+                                    <img src="./assets/img/companies/rub-bani.svg" alt="" />
+                                </div>
+                                <h3 class="multiround-title part_text">ЦЕНТРАЛЬНЫЙ РЫНОК</h3>
+                                <ul class="our-projects__contacts">
+                                    <li>Москва, поселок Рублево, ул. Советская, д.9</li>
+                                    <li>+7 499 67-00-777</li>
+                                    <li>rublevskie-bani.ru/</li>
+                                </ul>
+                            </div>
+
+                            <div class="our-projects__hover-item">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="964"
+                                    height="1144"
+                                    viewBox="0 0 964 1144"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M793.5 170.84L170.736 973.156L170.737 170.839"
+                                        stroke="#111111"
+                                        stroke-width="340"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/3.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <div class="our-projects__logo">
+                                    <img src="./assets/img/companies/rub-bani.svg" alt="" />
+                                </div>
+                                <h3 class="multiround-title">РЫНОК НА ЛЕНИНСКОМ</h3>
+                                <ul class="our-projects__contacts">
+                                    <li>Москва, поселок Рублево, ул. Советская, д.9</li>
+                                    <li>+7 499 67-00-777</li>
+                                    <li>rublevskie-bani.ru/</li>
+                                </ul>
+                            </div>
+
+                            <div class="our-projects__hover-item">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="964"
+                                    height="1144"
+                                    viewBox="0 0 964 1144"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M793.5 170.84L170.736 973.156L170.737 170.839"
+                                        stroke="#111111"
+                                        stroke-width="340"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                        </a>
+                        <div class="our-projects__pattern">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="79"
+                                height="32"
+                                viewBox="0 0 79 32"
+                                fill="none"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M78.5471 6.07655C78.5285 5.25125 78.3237 4.44115 77.9486 3.708C77.5734 2.97486 77.0376 2.33803 76.3821 1.84607C75.7267 1.35411 74.9687 1.02 74.1662 0.869238C73.3636 0.718476 72.5377 0.755105 71.7513 0.976186C69.8905 1.53935 68.7207 2.88728 67.8841 4.58058C65.2772 9.85529 62.6749 15.1317 60.0773 20.4097C60.01 20.5466 59.9359 20.6801 59.8648 20.8154L59.7874 20.7775C59.7874 20.7775 59.7874 11.1189 59.784 6.52189C59.7823 6.16305 59.7586 5.80465 59.7129 5.44879C59.5955 4.60035 59.2807 3.79218 58.7942 3.09083C58.3078 2.38947 57.6636 1.81496 56.9148 1.41447C56.1659 1.01398 55.3338 0.798977 54.4868 0.78717C53.6397 0.775363 52.8021 0.967045 52.0426 1.34651C50.6458 2.06901 49.7411 3.25503 49.0594 4.63842C47.7528 7.28959 43.2483 16.5338 42.9035 17.2327C42.3147 18.4272 41.7243 19.6205 41.1322 20.8127L41.051 20.8002C41.051 20.8002 41.0532 11.0873 41.0468 6.47547C41.0467 6.06971 41.0159 5.66455 40.9544 5.26358C40.8176 4.49009 40.5166 3.75576 40.0722 3.11125C39.6277 2.46673 39.0504 1.92735 38.38 1.53024C37.7095 1.13312 36.9619 0.887686 36.1887 0.810936C35.4155 0.734187 34.635 0.827922 33.901 1.08564C32.1715 1.73893 31.0979 3.06905 30.3034 4.67945C27.7141 9.92704 25.126 15.1756 22.5391 20.425C22.4703 20.5641 22.3929 20.6999 22.3195 20.8372L22.2338 20.7968C22.2338 20.7968 22.2409 10.8142 22.2315 6.0773C22.2129 5.252 22.0082 4.44189 21.633 3.70875C21.2578 2.9756 20.7221 2.33877 20.0666 1.84681C19.4111 1.35485 18.6532 1.02084 17.8507 0.870073C17.0482 0.719312 16.2222 0.755847 15.4357 0.976929C13.5749 1.54009 12.4048 2.88812 11.5686 4.58141C8.96257 9.856 0.960539 26.0174 0.768028 26.5053C0.76314 26.5182 0.759413 26.5296 0.754901 26.5433C0.553965 26.9786 0.449635 27.4531 0.449219 27.9335C0.449219 28.8109 0.793832 29.6524 1.4073 30.2728C2.02076 30.8932 2.85281 31.2418 3.72039 31.2418C4.34105 31.2413 4.94876 31.0623 5.4726 30.7257C5.99643 30.389 6.41475 29.9086 6.67871 29.3405C6.98778 28.7936 7.25442 28.1415 7.5695 27.5061C10.0334 22.5441 15.4 11.6394 15.635 11.1549L15.7267 11.1759V11.6634C15.7267 16.3533 15.728 21.0437 15.7305 25.7349C15.7316 26.0622 15.7587 26.3889 15.8117 26.7118C15.9594 27.6001 16.3245 28.4369 16.8737 29.1461C17.423 29.8552 18.1389 30.4141 18.9563 30.7719C19.7737 31.1297 20.6667 31.275 21.5539 31.1945C22.441 31.1141 23.2941 30.8104 24.0356 30.3113C25.2034 29.5173 25.9453 28.3804 26.5582 27.1354C29.1017 21.9689 31.6469 16.8029 34.1939 11.6375C34.2623 11.4991 34.3376 11.3645 34.4098 11.2276C34.4425 11.2405 34.4752 11.2542 34.5083 11.2656V11.8219C34.5083 16.4497 34.5011 21.0775 34.5083 25.706C34.5158 29.6018 38.3205 32.2803 41.8218 30.8509C43.4269 30.1953 44.4537 28.9272 45.2035 27.4054C47.4219 22.9111 52.5701 12.3999 52.889 11.7429C52.969 11.5778 53.0589 11.4169 53.1439 11.2542L53.2217 11.2922C53.2217 11.4637 53.2526 26.0642 53.3033 26.5296C53.6417 29.6185 56.8561 31.8593 59.8374 31.0863C61.7809 30.5824 63.0202 29.2447 63.8842 27.5046C66.3478 22.5426 71.7148 11.6379 71.9494 11.1534L72.0412 11.1743V11.6618C72.0412 16.3523 72.0374 27.6886 72.0382 27.6928C72.0321 27.7757 72.0258 27.8586 72.0258 27.9422C72.0258 28.817 72.3693 29.6558 72.9808 30.2744C73.5924 30.893 74.4218 31.2405 75.2867 31.2406C76.1517 31.2405 76.9811 30.893 77.5927 30.2744C78.2042 29.6558 78.5478 28.817 78.5478 27.9422C78.5478 27.8955 78.5429 27.8502 78.541 27.8038C78.5455 27.8023 78.5565 10.8135 78.5471 6.07655Z"
+                                    fill="black"
+                                />
+                            </svg>
+                        </div>
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/4.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <div class="our-projects__logo">
+                                    <img src="./assets/img/companies/rub-bani.svg" alt="" />
+                                </div>
+                                <h3 class="multiround-title">ЦЕНТРАЛЬНЫЙ РЫНОК НА МАРОСЕЙКЕ</h3>
+                                <ul class="our-projects__contacts">
+                                    <li>Москва, поселок Рублево, ул. Советская, д.9</li>
+                                    <li>+7 499 67-00-777</li>
+                                    <li>rublevskie-bani.ru/</li>
+                                </ul>
+                            </div>
+
+                            <div class="our-projects__hover-item">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="964"
+                                    height="1144"
+                                    viewBox="0 0 964 1144"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M793.5 170.84L170.736 973.156L170.737 170.839"
+                                        stroke="#111111"
+                                        stroke-width="340"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/5.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <div class="our-projects__logo">
+                                    <img src="./assets/img/companies/rub-bani.svg" alt="" />
+                                </div>
+                                <h3 class="multiround-title part_text">ВАРШАВСКИЕ БАНИ</h3>
+                                <ul class="our-projects__contacts">
+                                    <li>Москва, поселок Рублево, ул. Советская, д.9</li>
+                                    <li>+7 499 67-00-777</li>
+                                    <li>rublevskie-bani.ru/</li>
+                                </ul>
+                            </div>
+
+                            <div class="our-projects__hover-item">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="964"
+                                    height="1144"
+                                    viewBox="0 0 964 1144"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M793.5 170.84L170.736 973.156L170.737 170.839"
+                                        stroke="#111111"
+                                        stroke-width="340"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/9.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <div class="our-projects__logo">
+                                    <img src="./assets/img/companies/rub-bani.svg" alt="" />
+                                </div>
+                                <h3 class="multiround-title part_text">РУБЛЕВСКИЕ БАНИ</h3>
+                                <ul class="our-projects__contacts">
+                                    <li>Москва, поселок Рублево, ул. Советская, д.9</li>
+                                    <li>+7 499 67-00-777</li>
+                                    <li>rublevskie-bani.ru/</li>
+                                </ul>
+                            </div>
+
+                            <div class="our-projects__hover-item">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="964"
+                                    height="1144"
+                                    viewBox="0 0 964 1144"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M793.5 170.84L170.736 973.156L170.737 170.839"
+                                        stroke="#111111"
+                                        stroke-width="340"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/6.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <div class="our-projects__logo">
+                                    <img src="./assets/img/companies/rub-bani.svg" alt="" />
+                                </div>
+                                <h3 class="multiround-title part_text">КОПТЕВСКИЕ БАНИ</h3>
+                                <ul class="our-projects__contacts">
+                                    <li>Москва, поселок Рублево, ул. Советская, д.9</li>
+                                    <li>+7 499 67-00-777</li>
+                                    <li>rublevskie-bani.ru/</li>
+                                </ul>
+                            </div>
+
+                            <div class="our-projects__hover-item">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="964"
+                                    height="1144"
+                                    viewBox="0 0 964 1144"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M793.5 170.84L170.736 973.156L170.737 170.839"
+                                        stroke="#111111"
+                                        stroke-width="340"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                        </a>
+                        <div class="our-projects__pattern">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="79"
+                                height="32"
+                                viewBox="0 0 79 32"
+                                fill="none"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M78.5471 6.07655C78.5285 5.25125 78.3237 4.44115 77.9486 3.708C77.5734 2.97486 77.0376 2.33803 76.3821 1.84607C75.7267 1.35411 74.9687 1.02 74.1662 0.869238C73.3636 0.718476 72.5377 0.755105 71.7513 0.976186C69.8905 1.53935 68.7207 2.88728 67.8841 4.58058C65.2772 9.85529 62.6749 15.1317 60.0773 20.4097C60.01 20.5466 59.9359 20.6801 59.8648 20.8154L59.7874 20.7775C59.7874 20.7775 59.7874 11.1189 59.784 6.52189C59.7823 6.16305 59.7586 5.80465 59.7129 5.44879C59.5955 4.60035 59.2807 3.79218 58.7942 3.09083C58.3078 2.38947 57.6636 1.81496 56.9148 1.41447C56.1659 1.01398 55.3338 0.798977 54.4868 0.78717C53.6397 0.775363 52.8021 0.967045 52.0426 1.34651C50.6458 2.06901 49.7411 3.25503 49.0594 4.63842C47.7528 7.28959 43.2483 16.5338 42.9035 17.2327C42.3147 18.4272 41.7243 19.6205 41.1322 20.8127L41.051 20.8002C41.051 20.8002 41.0532 11.0873 41.0468 6.47547C41.0467 6.06971 41.0159 5.66455 40.9544 5.26358C40.8176 4.49009 40.5166 3.75576 40.0722 3.11125C39.6277 2.46673 39.0504 1.92735 38.38 1.53024C37.7095 1.13312 36.9619 0.887686 36.1887 0.810936C35.4155 0.734187 34.635 0.827922 33.901 1.08564C32.1715 1.73893 31.0979 3.06905 30.3034 4.67945C27.7141 9.92704 25.126 15.1756 22.5391 20.425C22.4703 20.5641 22.3929 20.6999 22.3195 20.8372L22.2338 20.7968C22.2338 20.7968 22.2409 10.8142 22.2315 6.0773C22.2129 5.252 22.0082 4.44189 21.633 3.70875C21.2578 2.9756 20.7221 2.33877 20.0666 1.84681C19.4111 1.35485 18.6532 1.02084 17.8507 0.870073C17.0482 0.719312 16.2222 0.755847 15.4357 0.976929C13.5749 1.54009 12.4048 2.88812 11.5686 4.58141C8.96257 9.856 0.960539 26.0174 0.768028 26.5053C0.76314 26.5182 0.759413 26.5296 0.754901 26.5433C0.553965 26.9786 0.449635 27.4531 0.449219 27.9335C0.449219 28.8109 0.793832 29.6524 1.4073 30.2728C2.02076 30.8932 2.85281 31.2418 3.72039 31.2418C4.34105 31.2413 4.94876 31.0623 5.4726 30.7257C5.99643 30.389 6.41475 29.9086 6.67871 29.3405C6.98778 28.7936 7.25442 28.1415 7.5695 27.5061C10.0334 22.5441 15.4 11.6394 15.635 11.1549L15.7267 11.1759V11.6634C15.7267 16.3533 15.728 21.0437 15.7305 25.7349C15.7316 26.0622 15.7587 26.3889 15.8117 26.7118C15.9594 27.6001 16.3245 28.4369 16.8737 29.1461C17.423 29.8552 18.1389 30.4141 18.9563 30.7719C19.7737 31.1297 20.6667 31.275 21.5539 31.1945C22.441 31.1141 23.2941 30.8104 24.0356 30.3113C25.2034 29.5173 25.9453 28.3804 26.5582 27.1354C29.1017 21.9689 31.6469 16.8029 34.1939 11.6375C34.2623 11.4991 34.3376 11.3645 34.4098 11.2276C34.4425 11.2405 34.4752 11.2542 34.5083 11.2656V11.8219C34.5083 16.4497 34.5011 21.0775 34.5083 25.706C34.5158 29.6018 38.3205 32.2803 41.8218 30.8509C43.4269 30.1953 44.4537 28.9272 45.2035 27.4054C47.4219 22.9111 52.5701 12.3999 52.889 11.7429C52.969 11.5778 53.0589 11.4169 53.1439 11.2542L53.2217 11.2922C53.2217 11.4637 53.2526 26.0642 53.3033 26.5296C53.6417 29.6185 56.8561 31.8593 59.8374 31.0863C61.7809 30.5824 63.0202 29.2447 63.8842 27.5046C66.3478 22.5426 71.7148 11.6379 71.9494 11.1534L72.0412 11.1743V11.6618C72.0412 16.3523 72.0374 27.6886 72.0382 27.6928C72.0321 27.7757 72.0258 27.8586 72.0258 27.9422C72.0258 28.817 72.3693 29.6558 72.9808 30.2744C73.5924 30.893 74.4218 31.2405 75.2867 31.2406C76.1517 31.2405 76.9811 30.893 77.5927 30.2744C78.2042 29.6558 78.5478 28.817 78.5478 27.9422C78.5478 27.8955 78.5429 27.8502 78.541 27.8038C78.5455 27.8023 78.5565 10.8135 78.5471 6.07655Z"
+                                    fill="black"
+                                />
+                            </svg>
+                        </div>
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/7.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <div class="our-projects__logo">
+                                    <img src="./assets/img/companies/rub-bani.svg" alt="" />
+                                </div>
+                                <h3 class="multiround-title part_text">РЖЕВСКИЕ БАНИ</h3>
+                                <ul class="our-projects__contacts">
+                                    <li>Москва, поселок Рублево, ул. Советская, д.9</li>
+                                    <li>+7 499 67-00-777</li>
+                                    <li>rublevskie-bani.ru/</li>
+                                </ul>
+                            </div>
+
+                            <div class="our-projects__hover-item">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="964"
+                                    height="1144"
+                                    viewBox="0 0 964 1144"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M793.5 170.84L170.736 973.156L170.737 170.839"
+                                        stroke="#111111"
+                                        stroke-width="340"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/4.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <div class="our-projects__logo">
+                                    <img src="./assets/img/companies/rub-bani.svg" alt="" />
+                                </div>
+                                <h3 class="multiround-title">ЦЕНТРАЛЬНЫЙ РЫНОК НА МАРОСЕЙКЕ</h3>
+                                <ul class="our-projects__contacts">
+                                    <li>Москва, поселок Рублево, ул. Советская, д.9</li>
+                                    <li>+7 499 67-00-777</li>
+                                    <li>rublevskie-bani.ru/</li>
+                                </ul>
+                            </div>
+
+                            <div class="our-projects__hover-item">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="964"
+                                    height="1144"
+                                    viewBox="0 0 964 1144"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M793.5 170.84L170.736 973.156L170.737 170.839"
+                                        stroke="#111111"
+                                        stroke-width="340"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/5.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <div class="our-projects__logo">
+                                    <img src="./assets/img/companies/rub-bani.svg" alt="" />
+                                </div>
+                                <h3 class="multiround-title part_text">ВАРШАВСКИЕ БАНИ</h3>
+                                <ul class="our-projects__contacts">
+                                    <li>Москва, поселок Рублево, ул. Советская, д.9</li>
+                                    <li>+7 499 67-00-777</li>
+                                    <li>rublevskie-bani.ru/</li>
+                                </ul>
+                            </div>
+
+                            <div class="our-projects__hover-item">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="964"
+                                    height="1144"
+                                    viewBox="0 0 964 1144"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M793.5 170.84L170.736 973.156L170.737 170.839"
+                                        stroke="#111111"
+                                        stroke-width="340"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/9.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <div class="our-projects__logo">
+                                    <img src="./assets/img/companies/rub-bani.svg" alt="" />
+                                </div>
+                                <h3 class="multiround-title part_text">РУБЛЕВСКИЕ БАНИ</h3>
+                                <ul class="our-projects__contacts">
+                                    <li>Москва, поселок Рублево, ул. Советская, д.9</li>
+                                    <li>+7 499 67-00-777</li>
+                                    <li>rublevskie-bani.ru/</li>
+                                </ul>
+                            </div>
+
+                            <div class="our-projects__hover-item">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="964"
+                                    height="1144"
+                                    viewBox="0 0 964 1144"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M793.5 170.84L170.736 973.156L170.737 170.839"
+                                        stroke="#111111"
+                                        stroke-width="340"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/6.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <div class="our-projects__logo">
+                                    <img src="./assets/img/companies/rub-bani.svg" alt="" />
+                                </div>
+                                <h3 class="multiround-title part_text">КОПТЕВСКИЕ БАНИ</h3>
+                                <ul class="our-projects__contacts">
+                                    <li>Москва, поселок Рублево, ул. Советская, д.9</li>
+                                    <li>+7 499 67-00-777</li>
+                                    <li>rublevskie-bani.ru/</li>
+                                </ul>
+                            </div>
+
+                            <div class="our-projects__hover-item">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="964"
+                                    height="1144"
+                                    viewBox="0 0 964 1144"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M793.5 170.84L170.736 973.156L170.737 170.839"
+                                        stroke="#111111"
+                                        stroke-width="340"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/6.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <div class="our-projects__logo">
+                                    <img src="./assets/img/companies/rub-bani.svg" alt="" />
+                                </div>
+                                <h3 class="multiround-title part_text">КОПТЕВСКИЕ БАНИ</h3>
+                                <ul class="our-projects__contacts">
+                                    <li>Москва, поселок Рублево, ул. Советская, д.9</li>
+                                    <li>+7 499 67-00-777</li>
+                                    <li>rublevskie-bani.ru/</li>
+                                </ul>
+                            </div>
+
+                            <div class="our-projects__hover-item">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="964"
+                                    height="1144"
+                                    viewBox="0 0 964 1144"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M793.5 170.84L170.736 973.156L170.737 170.839"
+                                        stroke="#111111"
+                                        stroke-width="340"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                        </a>
+                        <div class="our-projects__pattern">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="79"
+                                height="32"
+                                viewBox="0 0 79 32"
+                                fill="none"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M78.5471 6.07655C78.5285 5.25125 78.3237 4.44115 77.9486 3.708C77.5734 2.97486 77.0376 2.33803 76.3821 1.84607C75.7267 1.35411 74.9687 1.02 74.1662 0.869238C73.3636 0.718476 72.5377 0.755105 71.7513 0.976186C69.8905 1.53935 68.7207 2.88728 67.8841 4.58058C65.2772 9.85529 62.6749 15.1317 60.0773 20.4097C60.01 20.5466 59.9359 20.6801 59.8648 20.8154L59.7874 20.7775C59.7874 20.7775 59.7874 11.1189 59.784 6.52189C59.7823 6.16305 59.7586 5.80465 59.7129 5.44879C59.5955 4.60035 59.2807 3.79218 58.7942 3.09083C58.3078 2.38947 57.6636 1.81496 56.9148 1.41447C56.1659 1.01398 55.3338 0.798977 54.4868 0.78717C53.6397 0.775363 52.8021 0.967045 52.0426 1.34651C50.6458 2.06901 49.7411 3.25503 49.0594 4.63842C47.7528 7.28959 43.2483 16.5338 42.9035 17.2327C42.3147 18.4272 41.7243 19.6205 41.1322 20.8127L41.051 20.8002C41.051 20.8002 41.0532 11.0873 41.0468 6.47547C41.0467 6.06971 41.0159 5.66455 40.9544 5.26358C40.8176 4.49009 40.5166 3.75576 40.0722 3.11125C39.6277 2.46673 39.0504 1.92735 38.38 1.53024C37.7095 1.13312 36.9619 0.887686 36.1887 0.810936C35.4155 0.734187 34.635 0.827922 33.901 1.08564C32.1715 1.73893 31.0979 3.06905 30.3034 4.67945C27.7141 9.92704 25.126 15.1756 22.5391 20.425C22.4703 20.5641 22.3929 20.6999 22.3195 20.8372L22.2338 20.7968C22.2338 20.7968 22.2409 10.8142 22.2315 6.0773C22.2129 5.252 22.0082 4.44189 21.633 3.70875C21.2578 2.9756 20.7221 2.33877 20.0666 1.84681C19.4111 1.35485 18.6532 1.02084 17.8507 0.870073C17.0482 0.719312 16.2222 0.755847 15.4357 0.976929C13.5749 1.54009 12.4048 2.88812 11.5686 4.58141C8.96257 9.856 0.960539 26.0174 0.768028 26.5053C0.76314 26.5182 0.759413 26.5296 0.754901 26.5433C0.553965 26.9786 0.449635 27.4531 0.449219 27.9335C0.449219 28.8109 0.793832 29.6524 1.4073 30.2728C2.02076 30.8932 2.85281 31.2418 3.72039 31.2418C4.34105 31.2413 4.94876 31.0623 5.4726 30.7257C5.99643 30.389 6.41475 29.9086 6.67871 29.3405C6.98778 28.7936 7.25442 28.1415 7.5695 27.5061C10.0334 22.5441 15.4 11.6394 15.635 11.1549L15.7267 11.1759V11.6634C15.7267 16.3533 15.728 21.0437 15.7305 25.7349C15.7316 26.0622 15.7587 26.3889 15.8117 26.7118C15.9594 27.6001 16.3245 28.4369 16.8737 29.1461C17.423 29.8552 18.1389 30.4141 18.9563 30.7719C19.7737 31.1297 20.6667 31.275 21.5539 31.1945C22.441 31.1141 23.2941 30.8104 24.0356 30.3113C25.2034 29.5173 25.9453 28.3804 26.5582 27.1354C29.1017 21.9689 31.6469 16.8029 34.1939 11.6375C34.2623 11.4991 34.3376 11.3645 34.4098 11.2276C34.4425 11.2405 34.4752 11.2542 34.5083 11.2656V11.8219C34.5083 16.4497 34.5011 21.0775 34.5083 25.706C34.5158 29.6018 38.3205 32.2803 41.8218 30.8509C43.4269 30.1953 44.4537 28.9272 45.2035 27.4054C47.4219 22.9111 52.5701 12.3999 52.889 11.7429C52.969 11.5778 53.0589 11.4169 53.1439 11.2542L53.2217 11.2922C53.2217 11.4637 53.2526 26.0642 53.3033 26.5296C53.6417 29.6185 56.8561 31.8593 59.8374 31.0863C61.7809 30.5824 63.0202 29.2447 63.8842 27.5046C66.3478 22.5426 71.7148 11.6379 71.9494 11.1534L72.0412 11.1743V11.6618C72.0412 16.3523 72.0374 27.6886 72.0382 27.6928C72.0321 27.7757 72.0258 27.8586 72.0258 27.9422C72.0258 28.817 72.3693 29.6558 72.9808 30.2744C73.5924 30.893 74.4218 31.2405 75.2867 31.2406C76.1517 31.2405 76.9811 30.893 77.5927 30.2744C78.2042 29.6558 78.5478 28.817 78.5478 27.9422C78.5478 27.8955 78.5429 27.8502 78.541 27.8038C78.5455 27.8023 78.5565 10.8135 78.5471 6.07655Z"
+                                    fill="black"
+                                />
+                            </svg>
+                        </div>
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/1.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <div class="our-projects__logo">
+                                    <img src="./assets/img/companies/rub-bani.svg" alt="" />
+                                </div>
+                                <h3 class="multiround-title part_text">УСАЧЕВСКИЙ РЫНОК</h3>
+                                <ul class="our-projects__contacts">
+                                    <li>Москва, поселок Рублево, ул. Советская, д.9</li>
+                                    <li>+7 499 67-00-777</li>
+                                    <li>rublevskie-bani.ru/</li>
+                                </ul>
+                            </div>
+
+                            <div class="our-projects__hover-item">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="964"
+                                    height="1144"
+                                    viewBox="0 0 964 1144"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M793.5 170.84L170.736 973.156L170.737 170.839"
+                                        stroke="#111111"
+                                        stroke-width="340"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/2.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <div class="our-projects__logo">
+                                    <img src="./assets/img/companies/rub-bani.svg" alt="" />
+                                </div>
+                                <h3 class="multiround-title part_text">ЦЕНТРАЛЬНЫЙ РЫНОК</h3>
+                                <ul class="our-projects__contacts">
+                                    <li>Москва, поселок Рублево, ул. Советская, д.9</li>
+                                    <li>+7 499 67-00-777</li>
+                                    <li>rublevskie-bani.ru/</li>
+                                </ul>
+                            </div>
+
+                            <div class="our-projects__hover-item">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="964"
+                                    height="1144"
+                                    viewBox="0 0 964 1144"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M793.5 170.84L170.736 973.156L170.737 170.839"
+                                        stroke="#111111"
+                                        stroke-width="340"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/2.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <div class="our-projects__logo">
+                                    <img src="./assets/img/companies/rub-bani.svg" alt="" />
+                                </div>
+                                <h3 class="multiround-title part_text">ЦЕНТРАЛЬНЫЙ РЫНОК</h3>
+                                <ul class="our-projects__contacts">
+                                    <li>Москва, поселок Рублево, ул. Советская, д.9</li>
+                                    <li>+7 499 67-00-777</li>
+                                    <li>rublevskie-bani.ru/</li>
+                                </ul>
+                            </div>
+
+                            <div class="our-projects__hover-item">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="964"
+                                    height="1144"
+                                    viewBox="0 0 964 1144"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M793.5 170.84L170.736 973.156L170.737 170.839"
+                                        stroke="#111111"
+                                        stroke-width="340"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="our-projects__grid_more">
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/5.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <h3 class="multiround-title part_text">ВАРШАВСКИЕ БАНИ</h3>
+                            </div>
+                        </a>
+
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/6.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <h3 class="multiround-title part_text">КОПТЕВСКИЕ БАНИ</h3>
+                            </div>
+                        </a>
+                        <div class="our-projects__pattern">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="79"
+                                height="32"
+                                viewBox="0 0 79 32"
+                                fill="none"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M78.5471 6.07655C78.5285 5.25125 78.3237 4.44115 77.9486 3.708C77.5734 2.97486 77.0376 2.33803 76.3821 1.84607C75.7267 1.35411 74.9687 1.02 74.1662 0.869238C73.3636 0.718476 72.5377 0.755105 71.7513 0.976186C69.8905 1.53935 68.7207 2.88728 67.8841 4.58058C65.2772 9.85529 62.6749 15.1317 60.0773 20.4097C60.01 20.5466 59.9359 20.6801 59.8648 20.8154L59.7874 20.7775C59.7874 20.7775 59.7874 11.1189 59.784 6.52189C59.7823 6.16305 59.7586 5.80465 59.7129 5.44879C59.5955 4.60035 59.2807 3.79218 58.7942 3.09083C58.3078 2.38947 57.6636 1.81496 56.9148 1.41447C56.1659 1.01398 55.3338 0.798977 54.4868 0.78717C53.6397 0.775363 52.8021 0.967045 52.0426 1.34651C50.6458 2.06901 49.7411 3.25503 49.0594 4.63842C47.7528 7.28959 43.2483 16.5338 42.9035 17.2327C42.3147 18.4272 41.7243 19.6205 41.1322 20.8127L41.051 20.8002C41.051 20.8002 41.0532 11.0873 41.0468 6.47547C41.0467 6.06971 41.0159 5.66455 40.9544 5.26358C40.8176 4.49009 40.5166 3.75576 40.0722 3.11125C39.6277 2.46673 39.0504 1.92735 38.38 1.53024C37.7095 1.13312 36.9619 0.887686 36.1887 0.810936C35.4155 0.734187 34.635 0.827922 33.901 1.08564C32.1715 1.73893 31.0979 3.06905 30.3034 4.67945C27.7141 9.92704 25.126 15.1756 22.5391 20.425C22.4703 20.5641 22.3929 20.6999 22.3195 20.8372L22.2338 20.7968C22.2338 20.7968 22.2409 10.8142 22.2315 6.0773C22.2129 5.252 22.0082 4.44189 21.633 3.70875C21.2578 2.9756 20.7221 2.33877 20.0666 1.84681C19.4111 1.35485 18.6532 1.02084 17.8507 0.870073C17.0482 0.719312 16.2222 0.755847 15.4357 0.976929C13.5749 1.54009 12.4048 2.88812 11.5686 4.58141C8.96257 9.856 0.960539 26.0174 0.768028 26.5053C0.76314 26.5182 0.759413 26.5296 0.754901 26.5433C0.553965 26.9786 0.449635 27.4531 0.449219 27.9335C0.449219 28.8109 0.793832 29.6524 1.4073 30.2728C2.02076 30.8932 2.85281 31.2418 3.72039 31.2418C4.34105 31.2413 4.94876 31.0623 5.4726 30.7257C5.99643 30.389 6.41475 29.9086 6.67871 29.3405C6.98778 28.7936 7.25442 28.1415 7.5695 27.5061C10.0334 22.5441 15.4 11.6394 15.635 11.1549L15.7267 11.1759V11.6634C15.7267 16.3533 15.728 21.0437 15.7305 25.7349C15.7316 26.0622 15.7587 26.3889 15.8117 26.7118C15.9594 27.6001 16.3245 28.4369 16.8737 29.1461C17.423 29.8552 18.1389 30.4141 18.9563 30.7719C19.7737 31.1297 20.6667 31.275 21.5539 31.1945C22.441 31.1141 23.2941 30.8104 24.0356 30.3113C25.2034 29.5173 25.9453 28.3804 26.5582 27.1354C29.1017 21.9689 31.6469 16.8029 34.1939 11.6375C34.2623 11.4991 34.3376 11.3645 34.4098 11.2276C34.4425 11.2405 34.4752 11.2542 34.5083 11.2656V11.8219C34.5083 16.4497 34.5011 21.0775 34.5083 25.706C34.5158 29.6018 38.3205 32.2803 41.8218 30.8509C43.4269 30.1953 44.4537 28.9272 45.2035 27.4054C47.4219 22.9111 52.5701 12.3999 52.889 11.7429C52.969 11.5778 53.0589 11.4169 53.1439 11.2542L53.2217 11.2922C53.2217 11.4637 53.2526 26.0642 53.3033 26.5296C53.6417 29.6185 56.8561 31.8593 59.8374 31.0863C61.7809 30.5824 63.0202 29.2447 63.8842 27.5046C66.3478 22.5426 71.7148 11.6379 71.9494 11.1534L72.0412 11.1743V11.6618C72.0412 16.3523 72.0374 27.6886 72.0382 27.6928C72.0321 27.7757 72.0258 27.8586 72.0258 27.9422C72.0258 28.817 72.3693 29.6558 72.9808 30.2744C73.5924 30.893 74.4218 31.2405 75.2867 31.2406C76.1517 31.2405 76.9811 30.893 77.5927 30.2744C78.2042 29.6558 78.5478 28.817 78.5478 27.9422C78.5478 27.8955 78.5429 27.8502 78.541 27.8038C78.5455 27.8023 78.5565 10.8135 78.5471 6.07655Z"
+                                    fill="black"
+                                />
+                            </svg>
+                        </div>
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/5.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <h3 class="multiround-title part_text">ВАРШАВСКИЕ БАНИ</h3>
+                            </div>
+                        </a>
+
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/6.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <h3 class="multiround-title part_text">КОПТЕВСКИЕ БАНИ</h3>
+                            </div>
+                        </a>
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/6.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <h3 class="multiround-title part_text">КОПТЕВСКИЕ БАНИ</h3>
+                            </div>
+                        </a>
+                        <div class="our-projects__pattern">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="79"
+                                height="32"
+                                viewBox="0 0 79 32"
+                                fill="none"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M78.5471 6.07655C78.5285 5.25125 78.3237 4.44115 77.9486 3.708C77.5734 2.97486 77.0376 2.33803 76.3821 1.84607C75.7267 1.35411 74.9687 1.02 74.1662 0.869238C73.3636 0.718476 72.5377 0.755105 71.7513 0.976186C69.8905 1.53935 68.7207 2.88728 67.8841 4.58058C65.2772 9.85529 62.6749 15.1317 60.0773 20.4097C60.01 20.5466 59.9359 20.6801 59.8648 20.8154L59.7874 20.7775C59.7874 20.7775 59.7874 11.1189 59.784 6.52189C59.7823 6.16305 59.7586 5.80465 59.7129 5.44879C59.5955 4.60035 59.2807 3.79218 58.7942 3.09083C58.3078 2.38947 57.6636 1.81496 56.9148 1.41447C56.1659 1.01398 55.3338 0.798977 54.4868 0.78717C53.6397 0.775363 52.8021 0.967045 52.0426 1.34651C50.6458 2.06901 49.7411 3.25503 49.0594 4.63842C47.7528 7.28959 43.2483 16.5338 42.9035 17.2327C42.3147 18.4272 41.7243 19.6205 41.1322 20.8127L41.051 20.8002C41.051 20.8002 41.0532 11.0873 41.0468 6.47547C41.0467 6.06971 41.0159 5.66455 40.9544 5.26358C40.8176 4.49009 40.5166 3.75576 40.0722 3.11125C39.6277 2.46673 39.0504 1.92735 38.38 1.53024C37.7095 1.13312 36.9619 0.887686 36.1887 0.810936C35.4155 0.734187 34.635 0.827922 33.901 1.08564C32.1715 1.73893 31.0979 3.06905 30.3034 4.67945C27.7141 9.92704 25.126 15.1756 22.5391 20.425C22.4703 20.5641 22.3929 20.6999 22.3195 20.8372L22.2338 20.7968C22.2338 20.7968 22.2409 10.8142 22.2315 6.0773C22.2129 5.252 22.0082 4.44189 21.633 3.70875C21.2578 2.9756 20.7221 2.33877 20.0666 1.84681C19.4111 1.35485 18.6532 1.02084 17.8507 0.870073C17.0482 0.719312 16.2222 0.755847 15.4357 0.976929C13.5749 1.54009 12.4048 2.88812 11.5686 4.58141C8.96257 9.856 0.960539 26.0174 0.768028 26.5053C0.76314 26.5182 0.759413 26.5296 0.754901 26.5433C0.553965 26.9786 0.449635 27.4531 0.449219 27.9335C0.449219 28.8109 0.793832 29.6524 1.4073 30.2728C2.02076 30.8932 2.85281 31.2418 3.72039 31.2418C4.34105 31.2413 4.94876 31.0623 5.4726 30.7257C5.99643 30.389 6.41475 29.9086 6.67871 29.3405C6.98778 28.7936 7.25442 28.1415 7.5695 27.5061C10.0334 22.5441 15.4 11.6394 15.635 11.1549L15.7267 11.1759V11.6634C15.7267 16.3533 15.728 21.0437 15.7305 25.7349C15.7316 26.0622 15.7587 26.3889 15.8117 26.7118C15.9594 27.6001 16.3245 28.4369 16.8737 29.1461C17.423 29.8552 18.1389 30.4141 18.9563 30.7719C19.7737 31.1297 20.6667 31.275 21.5539 31.1945C22.441 31.1141 23.2941 30.8104 24.0356 30.3113C25.2034 29.5173 25.9453 28.3804 26.5582 27.1354C29.1017 21.9689 31.6469 16.8029 34.1939 11.6375C34.2623 11.4991 34.3376 11.3645 34.4098 11.2276C34.4425 11.2405 34.4752 11.2542 34.5083 11.2656V11.8219C34.5083 16.4497 34.5011 21.0775 34.5083 25.706C34.5158 29.6018 38.3205 32.2803 41.8218 30.8509C43.4269 30.1953 44.4537 28.9272 45.2035 27.4054C47.4219 22.9111 52.5701 12.3999 52.889 11.7429C52.969 11.5778 53.0589 11.4169 53.1439 11.2542L53.2217 11.2922C53.2217 11.4637 53.2526 26.0642 53.3033 26.5296C53.6417 29.6185 56.8561 31.8593 59.8374 31.0863C61.7809 30.5824 63.0202 29.2447 63.8842 27.5046C66.3478 22.5426 71.7148 11.6379 71.9494 11.1534L72.0412 11.1743V11.6618C72.0412 16.3523 72.0374 27.6886 72.0382 27.6928C72.0321 27.7757 72.0258 27.8586 72.0258 27.9422C72.0258 28.817 72.3693 29.6558 72.9808 30.2744C73.5924 30.893 74.4218 31.2405 75.2867 31.2406C76.1517 31.2405 76.9811 30.893 77.5927 30.2744C78.2042 29.6558 78.5478 28.817 78.5478 27.9422C78.5478 27.8955 78.5429 27.8502 78.541 27.8038C78.5455 27.8023 78.5565 10.8135 78.5471 6.07655Z"
+                                    fill="black"
+                                />
+                            </svg>
+                        </div>
+
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/6.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <h3 class="multiround-title part_text">КОПТЕВСКИЕ БАНИ</h3>
+                            </div>
+                        </a>
+
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/6.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <h3 class="multiround-title part_text">КОПТЕВСКИЕ БАНИ</h3>
+                            </div>
+                        </a>
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/6.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <h3 class="multiround-title part_text">КОПТЕВСКИЕ БАНИ</h3>
+                            </div>
+                        </a>
+                        <div class="our-projects__pattern">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="79"
+                                height="32"
+                                viewBox="0 0 79 32"
+                                fill="none"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M78.5471 6.07655C78.5285 5.25125 78.3237 4.44115 77.9486 3.708C77.5734 2.97486 77.0376 2.33803 76.3821 1.84607C75.7267 1.35411 74.9687 1.02 74.1662 0.869238C73.3636 0.718476 72.5377 0.755105 71.7513 0.976186C69.8905 1.53935 68.7207 2.88728 67.8841 4.58058C65.2772 9.85529 62.6749 15.1317 60.0773 20.4097C60.01 20.5466 59.9359 20.6801 59.8648 20.8154L59.7874 20.7775C59.7874 20.7775 59.7874 11.1189 59.784 6.52189C59.7823 6.16305 59.7586 5.80465 59.7129 5.44879C59.5955 4.60035 59.2807 3.79218 58.7942 3.09083C58.3078 2.38947 57.6636 1.81496 56.9148 1.41447C56.1659 1.01398 55.3338 0.798977 54.4868 0.78717C53.6397 0.775363 52.8021 0.967045 52.0426 1.34651C50.6458 2.06901 49.7411 3.25503 49.0594 4.63842C47.7528 7.28959 43.2483 16.5338 42.9035 17.2327C42.3147 18.4272 41.7243 19.6205 41.1322 20.8127L41.051 20.8002C41.051 20.8002 41.0532 11.0873 41.0468 6.47547C41.0467 6.06971 41.0159 5.66455 40.9544 5.26358C40.8176 4.49009 40.5166 3.75576 40.0722 3.11125C39.6277 2.46673 39.0504 1.92735 38.38 1.53024C37.7095 1.13312 36.9619 0.887686 36.1887 0.810936C35.4155 0.734187 34.635 0.827922 33.901 1.08564C32.1715 1.73893 31.0979 3.06905 30.3034 4.67945C27.7141 9.92704 25.126 15.1756 22.5391 20.425C22.4703 20.5641 22.3929 20.6999 22.3195 20.8372L22.2338 20.7968C22.2338 20.7968 22.2409 10.8142 22.2315 6.0773C22.2129 5.252 22.0082 4.44189 21.633 3.70875C21.2578 2.9756 20.7221 2.33877 20.0666 1.84681C19.4111 1.35485 18.6532 1.02084 17.8507 0.870073C17.0482 0.719312 16.2222 0.755847 15.4357 0.976929C13.5749 1.54009 12.4048 2.88812 11.5686 4.58141C8.96257 9.856 0.960539 26.0174 0.768028 26.5053C0.76314 26.5182 0.759413 26.5296 0.754901 26.5433C0.553965 26.9786 0.449635 27.4531 0.449219 27.9335C0.449219 28.8109 0.793832 29.6524 1.4073 30.2728C2.02076 30.8932 2.85281 31.2418 3.72039 31.2418C4.34105 31.2413 4.94876 31.0623 5.4726 30.7257C5.99643 30.389 6.41475 29.9086 6.67871 29.3405C6.98778 28.7936 7.25442 28.1415 7.5695 27.5061C10.0334 22.5441 15.4 11.6394 15.635 11.1549L15.7267 11.1759V11.6634C15.7267 16.3533 15.728 21.0437 15.7305 25.7349C15.7316 26.0622 15.7587 26.3889 15.8117 26.7118C15.9594 27.6001 16.3245 28.4369 16.8737 29.1461C17.423 29.8552 18.1389 30.4141 18.9563 30.7719C19.7737 31.1297 20.6667 31.275 21.5539 31.1945C22.441 31.1141 23.2941 30.8104 24.0356 30.3113C25.2034 29.5173 25.9453 28.3804 26.5582 27.1354C29.1017 21.9689 31.6469 16.8029 34.1939 11.6375C34.2623 11.4991 34.3376 11.3645 34.4098 11.2276C34.4425 11.2405 34.4752 11.2542 34.5083 11.2656V11.8219C34.5083 16.4497 34.5011 21.0775 34.5083 25.706C34.5158 29.6018 38.3205 32.2803 41.8218 30.8509C43.4269 30.1953 44.4537 28.9272 45.2035 27.4054C47.4219 22.9111 52.5701 12.3999 52.889 11.7429C52.969 11.5778 53.0589 11.4169 53.1439 11.2542L53.2217 11.2922C53.2217 11.4637 53.2526 26.0642 53.3033 26.5296C53.6417 29.6185 56.8561 31.8593 59.8374 31.0863C61.7809 30.5824 63.0202 29.2447 63.8842 27.5046C66.3478 22.5426 71.7148 11.6379 71.9494 11.1534L72.0412 11.1743V11.6618C72.0412 16.3523 72.0374 27.6886 72.0382 27.6928C72.0321 27.7757 72.0258 27.8586 72.0258 27.9422C72.0258 28.817 72.3693 29.6558 72.9808 30.2744C73.5924 30.893 74.4218 31.2405 75.2867 31.2406C76.1517 31.2405 76.9811 30.893 77.5927 30.2744C78.2042 29.6558 78.5478 28.817 78.5478 27.9422C78.5478 27.8955 78.5429 27.8502 78.541 27.8038C78.5455 27.8023 78.5565 10.8135 78.5471 6.07655Z"
+                                    fill="black"
+                                />
+                            </svg>
+                        </div>
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/5.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <h3 class="multiround-title part_text">ВАРШАВСКИЕ БАНИ</h3>
+                            </div>
+                        </a>
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/9.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <h3 class="multiround-title part_text">РУБЛЕВСКИЕ БАНИ</h3>
+                            </div>
+                        </a>
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/6.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <h3 class="multiround-title part_text">КОПТЕВСКИЕ БАНИ</h3>
+                            </div>
+                        </a>
+
+                        <div class="our-projects__pattern">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="79"
+                                height="32"
+                                viewBox="0 0 79 32"
+                                fill="none"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M78.5471 6.07655C78.5285 5.25125 78.3237 4.44115 77.9486 3.708C77.5734 2.97486 77.0376 2.33803 76.3821 1.84607C75.7267 1.35411 74.9687 1.02 74.1662 0.869238C73.3636 0.718476 72.5377 0.755105 71.7513 0.976186C69.8905 1.53935 68.7207 2.88728 67.8841 4.58058C65.2772 9.85529 62.6749 15.1317 60.0773 20.4097C60.01 20.5466 59.9359 20.6801 59.8648 20.8154L59.7874 20.7775C59.7874 20.7775 59.7874 11.1189 59.784 6.52189C59.7823 6.16305 59.7586 5.80465 59.7129 5.44879C59.5955 4.60035 59.2807 3.79218 58.7942 3.09083C58.3078 2.38947 57.6636 1.81496 56.9148 1.41447C56.1659 1.01398 55.3338 0.798977 54.4868 0.78717C53.6397 0.775363 52.8021 0.967045 52.0426 1.34651C50.6458 2.06901 49.7411 3.25503 49.0594 4.63842C47.7528 7.28959 43.2483 16.5338 42.9035 17.2327C42.3147 18.4272 41.7243 19.6205 41.1322 20.8127L41.051 20.8002C41.051 20.8002 41.0532 11.0873 41.0468 6.47547C41.0467 6.06971 41.0159 5.66455 40.9544 5.26358C40.8176 4.49009 40.5166 3.75576 40.0722 3.11125C39.6277 2.46673 39.0504 1.92735 38.38 1.53024C37.7095 1.13312 36.9619 0.887686 36.1887 0.810936C35.4155 0.734187 34.635 0.827922 33.901 1.08564C32.1715 1.73893 31.0979 3.06905 30.3034 4.67945C27.7141 9.92704 25.126 15.1756 22.5391 20.425C22.4703 20.5641 22.3929 20.6999 22.3195 20.8372L22.2338 20.7968C22.2338 20.7968 22.2409 10.8142 22.2315 6.0773C22.2129 5.252 22.0082 4.44189 21.633 3.70875C21.2578 2.9756 20.7221 2.33877 20.0666 1.84681C19.4111 1.35485 18.6532 1.02084 17.8507 0.870073C17.0482 0.719312 16.2222 0.755847 15.4357 0.976929C13.5749 1.54009 12.4048 2.88812 11.5686 4.58141C8.96257 9.856 0.960539 26.0174 0.768028 26.5053C0.76314 26.5182 0.759413 26.5296 0.754901 26.5433C0.553965 26.9786 0.449635 27.4531 0.449219 27.9335C0.449219 28.8109 0.793832 29.6524 1.4073 30.2728C2.02076 30.8932 2.85281 31.2418 3.72039 31.2418C4.34105 31.2413 4.94876 31.0623 5.4726 30.7257C5.99643 30.389 6.41475 29.9086 6.67871 29.3405C6.98778 28.7936 7.25442 28.1415 7.5695 27.5061C10.0334 22.5441 15.4 11.6394 15.635 11.1549L15.7267 11.1759V11.6634C15.7267 16.3533 15.728 21.0437 15.7305 25.7349C15.7316 26.0622 15.7587 26.3889 15.8117 26.7118C15.9594 27.6001 16.3245 28.4369 16.8737 29.1461C17.423 29.8552 18.1389 30.4141 18.9563 30.7719C19.7737 31.1297 20.6667 31.275 21.5539 31.1945C22.441 31.1141 23.2941 30.8104 24.0356 30.3113C25.2034 29.5173 25.9453 28.3804 26.5582 27.1354C29.1017 21.9689 31.6469 16.8029 34.1939 11.6375C34.2623 11.4991 34.3376 11.3645 34.4098 11.2276C34.4425 11.2405 34.4752 11.2542 34.5083 11.2656V11.8219C34.5083 16.4497 34.5011 21.0775 34.5083 25.706C34.5158 29.6018 38.3205 32.2803 41.8218 30.8509C43.4269 30.1953 44.4537 28.9272 45.2035 27.4054C47.4219 22.9111 52.5701 12.3999 52.889 11.7429C52.969 11.5778 53.0589 11.4169 53.1439 11.2542L53.2217 11.2922C53.2217 11.4637 53.2526 26.0642 53.3033 26.5296C53.6417 29.6185 56.8561 31.8593 59.8374 31.0863C61.7809 30.5824 63.0202 29.2447 63.8842 27.5046C66.3478 22.5426 71.7148 11.6379 71.9494 11.1534L72.0412 11.1743V11.6618C72.0412 16.3523 72.0374 27.6886 72.0382 27.6928C72.0321 27.7757 72.0258 27.8586 72.0258 27.9422C72.0258 28.817 72.3693 29.6558 72.9808 30.2744C73.5924 30.893 74.4218 31.2405 75.2867 31.2406C76.1517 31.2405 76.9811 30.893 77.5927 30.2744C78.2042 29.6558 78.5478 28.817 78.5478 27.9422C78.5478 27.8955 78.5429 27.8502 78.541 27.8038C78.5455 27.8023 78.5565 10.8135 78.5471 6.07655Z"
+                                    fill="black"
+                                />
+                            </svg>
+                        </div>
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/6.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <h3 class="multiround-title part_text">КОПТЕВСКИЕ БАНИ</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <button class="link-button">Загрузить еще</button>
+                </div>
+            </section>
+
+            <section class="send-request">
+                <div class="main__container">
+                    <div class="main__cover main__cover_l">
+                        <img src="./assets/img/send-request.png" alt="" />
+                    </div>
+                    <a class="link-block">
+                        <div class="link-block__title">
+                            <h2 class="multiround-title">ПАРТНЕРАМ</h2>
+                            <div class="white-logo"></div>
+                        </div>
+
+                        <p class="link-block__description">
+                            Инвесторы, а также собственники объектов недвижимости и земельных участков могут стать
+                            партнёрами Gremm Group. Компания берет на себя полный цикл в создании уникальных торговых
+                            и досуговых пространств, от разработки проекта до его реализации. Наши объекты становятся
+                            заметными городскими площадками, которые притягивают к себе городских жителей и о которых
+                            регулярно пишут СМИ
+                        </p>
+                        <button class="sign-link-button"></button>
+                    </a>
+                    <div class="title-section__left">
+                        <p class="title-section__description">
+                            Мы рушим стандарты и создаём новые необыкновенно креативные и атмосферные проекты<br />
+                            В собственности и управлении компании находятся наиболее яркие и коммерчески успешные
+                            объекты коммерческой недвижимости.
+                        </p>
+                        <div class="info-block info-block_black">
+                            <div class="white-logo"></div>
+                            <h2 class="multiround-title">300</h2>
+                            <p class="cover__description">объектов</p>
+                        </div>
+                    </div>
+                    <div class="rent-cover main__cover main__cover_l">
+                        <img src="./assets/img/rent.png" alt="Rent" />
+                        <div class="main__cover_info">
+                            <h2 class="multiround-title">АРЕНДА</h2>
+                            <button class="main-button">Заявка на аренду</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section class="footer__top">
+                <div class="footer__logo">
+                    <svg
+                        width="5918"
+                        height="1419"
+                        viewBox="0 0 5918 1419"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M175.896 1243.02L871.556 176V1243.02L1567.42 176V1243.02L2261.31 176V1243.02L2959.28 176V1243.02L3653.17 176V1243.02L4351.14 176V1243.02L5049.11 176V1243.02L5743 176V1243.02"
+                            stroke="#9E2629"
+                            stroke-width="300"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                </div>
+                <div class="main__container">
+                    <h1 class="multiround-title footer__title">Еще один повод любить Москву сильнее</h1>
+                </div>
+            </section>
+            <section class="footer__bottom">
+                <div class="main__container">
+                    <div class="header__logo"></div>
+                    <nav class="header__navigation">
+                        <a href="/projects.html" class="header__link">Проекты</a>
+                        <a href="/partners.html" class="header__link">Партнёрство</a>
+                        <a href="/rent.html" class="header__link">Аренда</a>
+                        <a href="/about-us.html" class="header__link">О компании</a>
+                        <a href="/development.html" class="header__link">Девелопмент</a>
+                    </nav>
+                    <ul class="header__contacts">
+                        <li>Москва, Краснопресненская набережная, д. 8</li>
+                        <li>
+                            <a href="tel:+7 495 642-80-00">+7 495 642-80-00</a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@gremm.ru">info@gremm.ru</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main__container">
+                    <p class="rights-text">© 2024. Gremm Group Real Estate Management. All rights reserved.</p>
+                    <a href="#" class="politic-link">Политика конфиденциальности</a>
+                    <a class="linza-logo">
+                        <img src="./assets/img/linza.svg" alt="" />
+                    </a>
+                </div>
+            </section>
+        </footer>
+
+        <script src="./script.js"></script>
+    </body>
+</html>

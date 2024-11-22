@@ -1,0 +1,365 @@
+.development-title_rent {
+    .development-title__left {
+        width: 67%;
+    }
+}
+
+.company-leader {
+    margin-bottom: 88px;
+    .info-block {
+        padding: 22px 20px 12px 19px;
+        .cover__description {
+            margin-top: auto;
+        }
+    }
+}
+
+.company-leader__title {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 12px;
+
+    margin-bottom: 87px;
+
+    .red-logo {
+        width: 89.94px;
+        height: 35.081px;
+        background-size: cover;
+    }
+
+    h2.multiround-title:nth-child(1) {
+        margin-right: 20px;
+    }
+
+    h2.multiround-title:nth-child(3) {
+        margin-left: 35px;
+    }
+}
+
+.company-leader__rigth {
+    .info-block {
+        background: #f3f3f3;
+
+        .black-logo {
+            margin-left: auto;
+        }
+
+        .cover__description {
+            color: #000;
+        }
+    }
+}
+
+.company-leader__left {
+}
+
+.company-leader__rigth {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    max-width: 49.6%;
+}
+
+.company-leader__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.company-leader__description {
+    color: #111;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 20.8px */
+
+    padding-top: 97px;
+
+    max-width: 92%;
+
+    br {
+        content: "";
+        display: block;
+        margin-bottom: 11px;
+    }
+}
+
+.development_rent {
+    margin-bottom: 0;
+}
+
+.our-projects_rent {
+    h2.multiround-title {
+        margin-bottom: 7px;
+    }
+
+    .info-block_black {
+        width: 100%;
+        height: 100%;
+        padding: 31px 35px 26px 31px;
+
+        h1.multiround-title {
+            font-size: 128px;
+        }
+    }
+}
+
+.main-map__wrapper_rent {
+    margin-bottom: 98px;
+}
+
+.culture-city__title {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 15px;
+
+    margin-bottom: 91px;
+    .red-logo {
+        width: 89.94px;
+        height: 35.081px;
+        background-size: cover;
+
+        margin: 0 26px 0 17px;
+    }
+}
+
+.development__cover_rent {
+    margin-bottom: 79px;
+}
+
+.culture-city__description {
+    color: #111;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 20.8px */
+
+    max-width: 49.7%;
+    margin-left: auto;
+
+    br {
+        content: "";
+        display: block;
+        margin-bottom: 11px;
+    }
+}
+
+.culture-city {
+    margin-bottom: 88px;
+}
+
+.contact-us_rent {
+    .contact-us__content {
+        padding-top: 21px;
+    }
+    .form-text {
+        margin-bottom: 14px;
+    }
+
+    h6.multiround-title {
+        width: 100%;
+        margin-bottom: 7px;
+    }
+
+    .form-select {
+        width: calc(50% - 5px);
+        margin-bottom: 7px;
+    }
+
+    .checkbox {
+        margin-bottom: 15px;
+    }
+
+    .cover__description {
+        margin-top: auto;
+        font-size: 14px;
+
+        max-width: 80%;
+
+        br {
+            content: "";
+            display: block;
+            margin-bottom: 9px;
+        }
+    }
+
+    .contact-us__cover {
+        margin-bottom: 44px;
+    }
+
+    .info-block_black {
+        padding: 19px 21px 17px 19px;
+    }
+}
+
+@media (max-width: 712px) {
+    .development-title_rent {
+        padding-top: 36px;
+        margin-bottom: 6px;
+        .development-title__description {
+            display: none;
+        }
+
+        .main-button {
+            display: none;
+        }
+    }
+
+    .company-leader__title {
+        row-gap: 6px;
+        margin-bottom: 55px;
+        h2.multiround-title {
+            font-size: 36px;
+
+            line-height: 122%;
+        }
+
+        h2.multiround-title:nth-child(1) {
+            width: calc(100% - 67px);
+            margin-right: 0;
+        }
+
+        h2.multiround-title:nth-child(3) {
+            margin-left: 0;
+        }
+
+        .red-logo {
+            width: 66.657px;
+            height: 26.006px;
+
+            align-self: flex-end;
+            margin-bottom: 10px;
+        }
+    }
+
+    .company-leader__content {
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+    .company-leader__rigth {
+        max-width: 100%;
+        gap: 8px;
+
+        .info-block {
+        }
+    }
+
+    .development_rent {
+        .development__cover {
+            margin-bottom: 15px;
+        }
+    }
+
+    .company-leader__description {
+        padding-top: 17px;
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    .main-map__wrapper_rent {
+        margin-bottom: 64px;
+    }
+
+    .culture-city__title {
+        row-gap: 6px;
+        margin-bottom: 18px;
+        h2.multiround-title {
+            font-size: 36px;
+            line-height: 122%;
+        }
+
+        .red-logo {
+            width: 66.657px;
+            height: 26.006px;
+
+            align-self: flex-end;
+            margin-left: 0;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .development_rent-sec {
+        margin-bottom: 25px;
+    }
+
+    .culture-city__description {
+        max-width: 100%;
+        margin-left: 0;
+        font-size: 14px;
+
+        br {
+            display: none;
+        }
+    }
+
+    .culture-city {
+        margin-bottom: 61px;
+    }
+
+    .contact-us_rent {
+        .contact-us__cover {
+            display: block;
+            width: 100%;
+            margin-bottom: 13px;
+        }
+
+        .contact-us__content {
+            flex-direction: column;
+        }
+
+        .contact-us__form {
+            width: 100%;
+            padding: 8px 9px;
+        }
+
+        .form-input {
+            margin-bottom: 6px;
+        }
+
+        .form-input,
+        .form-text {
+            label {
+                left: 14px;
+            }
+        }
+
+        .form-text {
+            margin-bottom: 29px;
+
+            label:first-child {
+                left: 14px;
+            }
+        }
+
+        .form-select {
+            width: 100%;
+            margin-bottom: 8px;
+        }
+
+        h6.multiround-title {
+            margin-bottom: 18px;
+        }
+
+        .form-select::after {
+            left: 86%;
+        }
+
+        .checkbox {
+            margin-bottom: 37px;
+        }
+
+        .form-select:not(.form-select_area) {
+            z-index: 3;
+        }
+
+        .form-select.form-select_area {
+            z-index: 2;
+        }
+    }
+}

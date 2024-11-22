@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="./libs/Swiper/swiper-bundle.min.css" />
+        <script src="./libs/Swiper/swiper-bundle.min.js"></script>
+        <script src="https://api-maps.yandex.ru/v3/?lang=ru_RU&apikey=7fd48120-c769-48f3-9c11-486491ed5a6b"></script>
+        <script src="./libs/anime-master/lib/anime.min.js"></script>
+
+        <link rel="stylesheet" href="./assets/fonts/MultiroundPro.otf" />
+
+        <link rel="stylesheet" href="./styles/index.css" />
+        <link rel="stylesheet" href="./styles/styles.css" />
+        <link rel="stylesheet" href="./styles/development.css" />
+        <link rel="stylesheet" href="./styles/rent.css" />
+
+        <title>GremmGroup</title>
+    </head>
+    <body>
+        <header class="header__wrapper">
+            <div class="main__container header__container">
+                <div class="header__logo"></div>
+                <nav class="header__navigation">
+                    <a href="/projects.html" class="header__link">Проекты</a>
+                    <a href="/rent.html" class="header__link header__link_active">Аренда</a>
+                    <a href="/development.html" class="header__link">Девелопмент</a>
+                    <a href="/partners.html" class="header__link">Партнерство</a>
+                    <a href="/about-us.html" class="header__link">О компании</a>
+                </nav>
+                <ul class="header__contacts">
+                    <li>
+                        <a href="tel:+7 495 642-80-00">+7 495 642-80-00</a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@gremm.ru">info@gremm.ru</a>
+                    </li>
+                </ul>
+                <div class="mobile-nav__button">
+                    <div class="mobile-nav__line"></div>
+                    <div class="mobile-nav__line"></div>
+                    <div class="mobile-nav__line"></div>
+                </div>
+
+                <nav class="mobile-nav">
+                    <a href="/projects.html" class="mobile-nav__link">Проекты</a>
+                    <a href="/partners.html" class="mobile-nav__link">Партнёрство</a>
+                    <a href="/rent.html" class="mobile-nav__link">Аренда</a>
+                    <a href="/about-us.html" class="mobile-nav__link">О компании</a>
+                    <a href="/development.html" class="mobile-nav__link">Девелопмент</a>
+
+                    <ul class="mobile-nav__contacts">
+                        <li>Москва, Краснопресненская набережная, д. 8</li>
+                        <li>
+                            <a href="tel:+7 495 642-80-00">+7 495 642-80-00</a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@gremm.ru">info@gremm.ru</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="development-title development-title_rent main__container">
+                <div class="development-title__left">
+                    <div class="red-logo"></div>
+                </div>
+                <div class="development-title__right">
+                    <h1 class="multiround-title">Аренда</h1>
+                    <p class="development-title__description">
+                        Мы рушим стандарты и создаём новые необыкновенно креативные и атмосферные проекты. <br />
+                        В собственности и управлении компании находятся наиболее яркие и коммерчески успешные объекты
+                        коммерческой недвижимости.
+                    </p>
+                    <button class="main-button">Заявка на аренду</button>
+                </div>
+            </section>
+
+            <section class="development development_rent main__container">
+                <div class="main-about-us__banner development__cover">
+                    <div class="main-about-us__cover">
+                        <img src="./assets/img/development/main-cover.png" alt="" />
+                        <div class="main-about-us__sign">
+                            <div class="white-logo"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="company-leader main__container">
+                <div class="company-leader__title">
+                    <h2 class="multiround-title">Компания Gremm Group</h2>
+                    <div class="red-logo"></div>
+                    <h2 class="multiround-title">признанный лидер</h2>
+                    <h2 class="multiround-title">рынка рынка street retail в Москве</h2>
+                </div>
+                <div class="company-leader__content">
+                    <div class="company-leader__left">
+                        <div class="info-block info-block_black">
+                            <div class="white-logo"></div>
+                            <p class="cover__description">
+                                Принципом работы GREMM GROUP является безусловная клиентоориентированность
+                            </p>
+                        </div>
+                    </div>
+                    <div class="company-leader__rigth">
+                        <div class="info-block info-block_black">
+                            <div class="black-logo"></div>
+                            <p class="cover__description">
+                                Мы рушим стандарты и создаём новые необыкновенно креативные и атмосферные проекты
+                            </p>
+                        </div>
+                        <div class="info-block info-block_black">
+                            <div class="black-logo"></div>
+                            <p class="cover__description">
+                                В собственности и управлении компании находятся наиболее яркие и коммерчески успешные
+                                объекты коммерческой недвижимости.
+                            </p>
+                        </div>
+                        <p class="company-leader__description">
+                            Объекты GREMM GROUP являются центрами притяжения не только локальных районов, но и всех
+                            людей ведущих активный образ жизни. <br />
+                            Расположение всех наших объектов чётко выверено и синхронизировано с привычным трафиком
+                            жителей и гостей города. <br />
+                            Многие фуд-концепции, начав свою коммерческую деятельность на объектах GREMM GROUP приобрели
+                            популярность и смогли создать собственную торговую сеть.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="our-projects our-projects_rent">
+                <div class="main__container">
+                    <h2 class="multiround-title multiround-title_part">Обьекты</h2>
+                    <div class="filters__wrapper">
+                        <ul class="filters">
+                            <li class="filters__item filters__item_active">Все</li>
+                            <li class="filters__item">Рынки</li>
+                            <li class="filters__item">Банные комплексы</li>
+                            <li class="filters__item">Торговые комплексы</li>
+                        </ul>
+                    </div>
+
+                    <div class="our-projects__grid">
+                        <div class="info-block info-block_black">
+                            <div class="white-logo"></div>
+                            <h1 class="multiround-title">300</h1>
+                            <p class="cover__description">объектов</p>
+                        </div>
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/2.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <div class="our-projects__logo">
+                                    <img src="./assets/img/companies/rub-bani.svg" alt="" />
+                                </div>
+                                <h3 class="multiround-title part_text">ЦЕНТРАЛЬНЫЙ РЫНОК</h3>
+                                <ul class="our-projects__contacts">
+                                    <li>Москва, поселок Рублево, ул. Советская, д.9</li>
+                                    <li>+7 499 67-00-777</li>
+                                    <li>rublevskie-bani.ru/</li>
+                                </ul>
+                            </div>
+
+                            <div class="our-projects__hover-item">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="964"
+                                    height="1144"
+                                    viewBox="0 0 964 1144"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M793.5 170.84L170.736 973.156L170.737 170.839"
+                                        stroke="#111111"
+                                        stroke-width="340"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/3.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <div class="our-projects__logo">
+                                    <img src="./assets/img/companies/rub-bani.svg" alt="" />
+                                </div>
+                                <h3 class="multiround-title">РЫНОК НА ЛЕНИНСКОМ</h3>
+                                <ul class="our-projects__contacts">
+                                    <li>Москва, поселок Рублево, ул. Советская, д.9</li>
+                                    <li>+7 499 67-00-777</li>
+                                    <li>rublevskie-bani.ru/</li>
+                                </ul>
+                            </div>
+
+                            <div class="our-projects__hover-item">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="964"
+                                    height="1144"
+                                    viewBox="0 0 964 1144"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M793.5 170.84L170.736 973.156L170.737 170.839"
+                                        stroke="#111111"
+                                        stroke-width="340"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/4.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <div class="our-projects__logo">
+                                    <img src="./assets/img/companies/rub-bani.svg" alt="" />
+                                </div>
+                                <h3 class="multiround-title">ЦЕНТРАЛЬНЫЙ РЫНОК НА МАРОСЕЙКЕ</h3>
+                                <ul class="our-projects__contacts">
+                                    <li>Москва, поселок Рублево, ул. Советская, д.9</li>
+                                    <li>+7 499 67-00-777</li>
+                                    <li>rublevskie-bani.ru/</li>
+                                </ul>
+                            </div>
+
+                            <div class="our-projects__hover-item">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="964"
+                                    height="1144"
+                                    viewBox="0 0 964 1144"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M793.5 170.84L170.736 973.156L170.737 170.839"
+                                        stroke="#111111"
+                                        stroke-width="340"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/5.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <div class="our-projects__logo">
+                                    <img src="./assets/img/companies/rub-bani.svg" alt="" />
+                                </div>
+                                <h3 class="multiround-title part_text">ВАРШАВСКИЕ БАНИ</h3>
+                                <ul class="our-projects__contacts">
+                                    <li>Москва, поселок Рублево, ул. Советская, д.9</li>
+                                    <li>+7 499 67-00-777</li>
+                                    <li>rublevskie-bani.ru/</li>
+                                </ul>
+                            </div>
+
+                            <div class="our-projects__hover-item">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="964"
+                                    height="1144"
+                                    viewBox="0 0 964 1144"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M793.5 170.84L170.736 973.156L170.737 170.839"
+                                        stroke="#111111"
+                                        stroke-width="340"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/1.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <div class="our-projects__logo">
+                                    <img src="./assets/img/companies/rub-bani.svg" alt="" />
+                                </div>
+                                <h3 class="multiround-title part_text">УСАЧЕВСКИЙ РЫНОК</h3>
+                                <ul class="our-projects__contacts">
+                                    <li>Москва, поселок Рублево, ул. Советская, д.9</li>
+                                    <li>+7 499 67-00-777</li>
+                                    <li>rublevskie-bani.ru/</li>
+                                </ul>
+                            </div>
+
+                            <div class="our-projects__hover-item">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="964"
+                                    height="1144"
+                                    viewBox="0 0 964 1144"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M793.5 170.84L170.736 973.156L170.737 170.839"
+                                        stroke="#111111"
+                                        stroke-width="340"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/5.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <div class="our-projects__logo">
+                                    <img src="./assets/img/companies/rub-bani.svg" alt="" />
+                                </div>
+                                <h3 class="multiround-title part_text">ВАРШАВСКИЕ БАНИ</h3>
+                                <ul class="our-projects__contacts">
+                                    <li>Москва, поселок Рублево, ул. Советская, д.9</li>
+                                    <li>+7 499 67-00-777</li>
+                                    <li>rublevskie-bani.ru/</li>
+                                </ul>
+                            </div>
+
+                            <div class="our-projects__hover-item">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="964"
+                                    height="1144"
+                                    viewBox="0 0 964 1144"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M793.5 170.84L170.736 973.156L170.737 170.839"
+                                        stroke="#111111"
+                                        stroke-width="340"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="our-projects__item main__cover main__cover_m">
+                            <div class="our-projects__cover">
+                                <img src="./assets/img/projects/1.png" alt="" />
+                            </div>
+
+                            <div class="main__cover_info">
+                                <div class="our-projects__logo">
+                                    <img src="./assets/img/companies/rub-bani.svg" alt="" />
+                                </div>
+                                <h3 class="multiround-title part_text">УСАЧЕВСКИЙ РЫНОК</h3>
+                                <ul class="our-projects__contacts">
+                                    <li>Москва, поселок Рублево, ул. Советская, д.9</li>
+                                    <li>+7 499 67-00-777</li>
+                                    <li>rublevskie-bani.ru/</li>
+                                </ul>
+                            </div>
+
+                            <div class="our-projects__hover-item">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="964"
+                                    height="1144"
+                                    viewBox="0 0 964 1144"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M793.5 170.84L170.736 973.156L170.737 170.839"
+                                        stroke="#111111"
+                                        stroke-width="340"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main-map__wrapper main-map__wrapper_rent">
+                <div class="main__container">
+                    <div id="main-map" style="width: 100%; height: 515px"></div>
+
+                    <button class="link-button">ВСЕ ОБЪЕКТЫ</button>
+                </div>
+            </section>
+
+            <section class="development development_rent development_rent-sec main__container">
+                <div class="main-about-us__banner development__cover development__cover_rent">
+                    <div class="main-about-us__cover">
+                        <img src="./assets/img/rent/1.png" alt="" />
+                        <div class="main-about-us__sign">
+                            <div class="white-logo"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="culture-city main__container">
+                <div class="culture-city__title">
+                    <h2 class="multiround-title">Предлагаем возможность стать</h2>
+                    <div class="red-logo"></div>
+                    <h2 class="multiround-title">культурной</h2>
+                    <h2 class="multiround-title">и городской частью города</h2>
+                </div>
+
+                <p class="culture-city__description">
+                    Мы поможем подобрать оптимальное помещение для ведения розничной торговли, оказания услуг
+                    и организации общественного питания. <br />
+                    Команда профессионалов высочайшего уровня оказывает маркетинговую, организационную и техническую
+                    помощь своим арендаторам, которых мы считаем своими партнёрами.
+                </p>
+            </section>
+
+            <section class="contact-us contact-us_rent main__container">
+                <h2 class="multiround-title multiround-title_part">Заявка на аренду</h2>
+                <div class="contact-us__content">
+                    <div class="contact-us__cover">
+                        <div class="info-block info-block_black">
+                            <div class="white-logo"></div>
+                            <p class="cover__description">
+                                Москва, Краснопресненская набережная, д. 8 <br />
+                                +7 495 642-80-00 <br />
+                                info@gremm.ru
+                            </p>
+                        </div>
+                    </div>
+                    <form action="" class="contact-us__form">
+                        <div class="form-input">
+                            <label for="name">ФИО</label>
+                            <input type="text" name="name" />
+                        </div>
+                        <div class="form-input">
+                            <label for="company">Компания</label>
+                            <input type="text" name="company" />
+                        </div>
+                        <div class="form-input">
+                            <label for="email">Ваш E-mail</label>
+                            <input type="text" name="email" />
+                        </div>
+                        <div class="form-input">
+                            <label for="phone">Ваш телефон</label>
+                            <input type="text" name="phone" />
+                        </div>
+
+                        <div class="form-text">
+                            <label for="message">Введите ваше сообщение</label>
+                            <textarea name="message"></textarea>
+                        </div>
+
+                        <h6 class="multiround-title">Обьект</h6>
+
+                        <div class="form-select">
+                            <label>Обьект</label>
+                            <div class="form-select__options">
+                                <ul class="form-select__list">
+                                    <li>УСАЧЕВСКИЙ РЫНОК</li>
+                                    <li>ЦЕНТРАЛЬНЫЙ РЫНОК</li>
+                                    <li>РЫНОК НА ЛЕНИНСКОМ</li>
+                                    <li>РУБЛЕВСКИЕ БАНИ</li>
+                                    <li>ЦЕНТРАЛЬНЫЙ РЫНОК НА МАРОСЕЙКЕ</li>
+                                    <li>ВАРШАВСКИЕ БАНИ</li>
+                                    <li>УСАЧЕВСКИЙ РЫНОК</li>
+                                    <li>ЦЕНТРАЛЬНЫЙ РЫНОК</li>
+                                    <li>РЫНОК НА ЛЕНИНСКОМ</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="form-select form-select_area">
+                            <label>Необходимая площадь</label>
+                            <label class="form-select__label_additional">в метрах</label>
+
+                            <div class="form-select__options">
+                                <ul class="form-select__list">
+                                    <li>10-50</li>
+                                    <li>50-100</li>
+                                    <li>100-200</li>
+                                    <li>200-400</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="agreement" />
+                                <div class="checkbox__item">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="10"
+                                        height="7"
+                                        viewBox="0 0 10 7"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M0.927734 3.01231L3.92188 6.00597L8.93394 0.993896"
+                                            stroke="white"
+                                            stroke-linecap="round"
+                                        />
+                                    </svg>
+                                </div>
+                                Нажимая кнопку «Написать нам», я даю своё согласие на обработку моих персональных
+                                данных, в соответствии с Федеральным законом от 27.07.2006 года № 152-ФЗ «О персональных
+                                данных», на условиях и для целей, определённых в Согласии на обработку персональных
+                                данных
+                            </label>
+                        </div>
+                        <button class="main-button">Заявка на аренду</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section class="footer__top">
+                <div class="footer__logo">
+                    <svg
+                        width="5918"
+                        height="1419"
+                        viewBox="0 0 5918 1419"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M175.896 1243.02L871.556 176V1243.02L1567.42 176V1243.02L2261.31 176V1243.02L2959.28 176V1243.02L3653.17 176V1243.02L4351.14 176V1243.02L5049.11 176V1243.02L5743 176V1243.02"
+                            stroke="#9E2629"
+                            stroke-width="300"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                </div>
+                <div class="main__container">
+                    <h1 class="multiround-title footer__title">Еще один повод любить Москву сильнее</h1>
+                </div>
+            </section>
+            <section class="footer__bottom">
+                <div class="main__container">
+                    <div class="header__logo"></div>
+                    <nav class="header__navigation">
+                        <a href="/projects.html" class="header__link">Проекты</a>
+                        <a href="/partners.html" class="header__link">Партнёрство</a>
+                        <a href="/rent.html" class="header__link">Аренда</a>
+                        <a href="/about-us.html" class="header__link">О компании</a>
+                        <a href="/development.html" class="header__link">Девелопмент</a>
+                    </nav>
+                    <ul class="header__contacts">
+                        <li>Москва, Краснопресненская набережная, д. 8</li>
+                        <li>
+                            <a href="tel:+7 495 642-80-00">+7 495 642-80-00</a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@gremm.ru">info@gremm.ru</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main__container">
+                    <p class="rights-text">© 2024. Gremm Group Real Estate Management. All rights reserved.</p>
+                    <a href="#" class="politic-link">Политика конфиденциальности</a>
+                    <a class="linza-logo">
+                        <img src="./assets/img/linza.svg" alt="" />
+                    </a>
+                </div>
+            </section>
+        </footer>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
